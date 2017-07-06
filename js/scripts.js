@@ -10,21 +10,13 @@ $(function() {
     var phone = $("#phone").val();
     var email = $("#email").val();
 
-    var fullContact = "";
-    fullContact = fullContact + "First Name: ";
-    fullContact += firstName;
-    fullContact += "Last Name: ";
-    fullContact += lastName;
-
-    $("ul.contacts").append(fullContact);
-    $("ul.contacts").append(lastName);
-    $("ul.contacts").append(street);
-    $("ul.contacts").append(city);
-    $("ul.contacts").append(state);
-    $("ul.contacts").append(zip);
-    $("ul.contacts").append(phone);
-    $("ul.contacts").append(email);
-
+    $("ul.contacts").append("<li>" + firstName + " " + lastName + "</li>");
+    $("ul.contacts").append("<li>" + street + "</li>");
+    $("ul.contacts").append("<li>" + city + "</li>");
+    $("ul.contacts").append("<li>" + state + "</li>");
+    $("ul.contacts").append("<li>" + zip + "</li>");
+    $("ul.contacts").append("<li>" + phone + "</li>");
+    $("ul.contacts").append("<li>" + email + "</li>");
 
   });
 });
